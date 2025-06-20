@@ -207,6 +207,13 @@ MIT License - see LICENSE file for details
 
 ## Changelog
 
+### v1.1.0
+- **Bilingual Documentation**: Added comprehensive Chinese documentation alongside English
+- **Improved Accessibility**: Better support for Chinese-speaking developers
+- **Package Name Update**: Updated all references to `n8n-nodes-variables-store`
+- **Enhanced Examples**: Updated example workflows with correct node types
+- **Documentation Structure**: Reorganized README with language navigation
+
 ### v1.0.0
 - Initial release
 - Variables Get, Set, and Manager nodes
@@ -423,6 +430,13 @@ MIT许可证 - 查看LICENSE文件了解详情
 - 文档：查看此README和内联帮助
 
 ## 更新日志
+
+### v1.1.0
+- **双语文档**: 添加完整的中文文档和英文文档
+- **提升可访问性**: 更好地支持中文开发者
+- **包名更新**: 更新所有引用为 `n8n-nodes-variables-store`
+- **增强示例**: 更新示例工作流的正确节点类型
+- **文档结构**: 重新组织README并添加语言导航
 
 ### v1.0.0
 - 初始发布
