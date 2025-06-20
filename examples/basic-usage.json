@@ -1,0 +1,107 @@
+{
+  "name": "Variables Example Workflow",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "start",
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "operation": "set",
+        "variableName": "apiUrl",
+        "variableValue": "https://api.example.com",
+        "valueType": "string"
+      },
+      "id": "set-variable",
+      "name": "Set API URL",
+      "type": "n8n-nodes-variables.variablesSet",
+      "typeVersion": 1,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "operation": "set",
+        "variableName": "config",
+        "variableValue": "{\"timeout\": 5000, \"retries\": 3}",
+        "valueType": "json"
+      },
+      "id": "set-config",
+      "name": "Set Config",
+      "type": "n8n-nodes-variables.variablesSet",
+      "typeVersion": 1,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "variableName": "apiUrl",
+        "defaultValue": "https://default.api.com"
+      },
+      "id": "get-api-url",
+      "name": "Get API URL",
+      "type": "n8n-nodes-variables.variablesGet",
+      "typeVersion": 1,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "operation": "getAll"
+      },
+      "id": "get-all-vars",
+      "name": "Get All Variables",
+      "type": "n8n-nodes-variables.variablesGet",
+      "typeVersion": 1,
+      "position": [1120, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Set API URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set API URL": {
+      "main": [
+        [
+          {
+            "node": "Set Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Config": {
+      "main": [
+        [
+          {
+            "node": "Get API URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get API URL": {
+      "main": [
+        [
+          {
+            "node": "Get All Variables",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "node": "n8n-nodes-variables.VariablesManager",
+  "nodeVersion": "1.0",
+  "codename": "VariablesManager"
+}

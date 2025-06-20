@@ -1,0 +1,100 @@
+{
+  "name": "Advanced Variables Management",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "start",
+      "name": "Start",
+      "type": "n8n-nodes-base.start",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "operation": "setMultiple",
+        "variablesObject": "{\n  \"environment\": \"production\",\n  \"apiUrl\": \"https://api.prod.com\",\n  \"timeout\": 10000,\n  \"debugMode\": false,\n  \"features\": {\n    \"auth\": true,\n    \"logging\": true,\n    \"cache\": false\n  }\n}"
+      },
+      "id": "bulk-set",
+      "name": "Bulk Set Variables",
+      "type": "n8n-nodes-variables.variablesSet",
+      "typeVersion": 1,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "operation": "info"
+      },
+      "id": "get-info",
+      "name": "Get Storage Info",
+      "type": "n8n-nodes-variables.variablesManager",
+      "typeVersion": 1,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "operation": "export"
+      },
+      "id": "export-backup",
+      "name": "Export Backup",
+      "type": "n8n-nodes-variables.variablesManager",
+      "typeVersion": 1,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "operation": "list"
+      },
+      "id": "list-variables",
+      "name": "List All Variables",
+      "type": "n8n-nodes-variables.variablesGet",
+      "typeVersion": 1,
+      "position": [1120, 300]
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Bulk Set Variables",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Bulk Set Variables": {
+      "main": [
+        [
+          {
+            "node": "Get Storage Info",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Storage Info": {
+      "main": [
+        [
+          {
+            "node": "Export Backup",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Export Backup": {
+      "main": [
+        [
+          {
+            "node": "List All Variables",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
