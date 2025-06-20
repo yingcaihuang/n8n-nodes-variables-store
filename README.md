@@ -207,6 +207,11 @@ MIT License - see LICENSE file for details
 
 ## Changelog
 
+### v1.1.1
+- **Critical Fix**: Fixed package.json node paths to match actual build output structure
+- **npm Package Fix**: Resolved issue where n8n couldn't find node files in published package
+- **Path Correction**: Updated node paths from `dist/nodes/` to `dist/` to match TypeScript build output
+
 ### v1.1.0
 - **Bilingual Documentation**: Added comprehensive Chinese documentation alongside English
 - **Improved Accessibility**: Better support for Chinese-speaking developers
@@ -430,6 +435,11 @@ MIT许可证 - 查看LICENSE文件了解详情
 - 文档：查看此README和内联帮助
 
 ## 更新日志
+
+### v1.1.1
+- **关键修复**: 修复package.json中的节点路径以匹配实际构建输出结构
+- **npm包修复**: 解决了n8n无法在已发布包中找到节点文件的问题
+- **路径纠正**: 将节点路径从 `dist/nodes/` 更新为 `dist/` 以匹配TypeScript构建输出
 
 ### v1.1.0
 - **双语文档**: 添加完整的中文文档和英文文档
