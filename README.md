@@ -207,6 +207,11 @@ MIT License - see LICENSE file for details
 
 ## Changelog
 
+### v1.1.2
+- **Repository Update**: Updated GitHub repository URL to correct owner (yingcaihuang)
+- **Package Configuration**: Updated homepage and repository URLs in package.json
+- **Documentation**: Updated all references to use correct GitHub repository
+
 ### v1.1.1
 - **Critical Fix**: Fixed package.json node paths to match actual build output structure
 - **npm Package Fix**: Resolved issue where n8n couldn't find node files in published package
@@ -435,6 +440,11 @@ MIT许可证 - 查看LICENSE文件了解详情
 - 文档：查看此README和内联帮助
 
 ## 更新日志
+
+### v1.1.2
+- **仓库更新**: 更新GitHub仓库URL为正确的所有者 (yingcaihuang)
+- **包配置**: 更新package.json中的主页和仓库URL
+- **文档**: 更新所有引用以使用正确的GitHub仓库
 
 ### v1.1.1
 - **关键修复**: 修复package.json中的节点路径以匹配实际构建输出结构

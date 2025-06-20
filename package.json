@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-variables-store",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "n8n community node for global variables management - alternative to paid Variables feature",
   "keywords": [
     "n8n-community-node-package",
@@ -10,14 +10,14 @@
     "storage"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/betty/n8n-nodes-variables-store",
+  "homepage": "https://github.com/yingcaihuang/n8n-nodes-variables-store",
   "author": {
     "name": "Betty",
     "email": "betty@example.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/betty/n8n-nodes-variables-store.git"
+    "url": "git+https://github.com/yingcaihuang/n8n-nodes-variables-store.git"
   },
   "main": "index.js",
   "scripts": {

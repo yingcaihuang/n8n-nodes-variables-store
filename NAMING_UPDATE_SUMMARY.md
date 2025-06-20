@@ -55,7 +55,7 @@ npm install n8n-nodes-variables-store
 https://github.com/betty/n8n-nodes-variables
 
 # 新地址
-https://github.com/betty/n8n-nodes-variables-store
+https://github.com/yingcaihuang/n8n-nodes-variables-store
 ```
 
 ## ✅ 验证结果
