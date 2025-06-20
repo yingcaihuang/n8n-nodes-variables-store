@@ -1,5 +1,5 @@
 {
-  "node": "n8n-nodes-variables.VariablesGet",
+  "node": "n8n-nodes-variables-store.VariablesGet",
   "nodeVersion": "1.0",
   "codename": "VariablesGet"
 }

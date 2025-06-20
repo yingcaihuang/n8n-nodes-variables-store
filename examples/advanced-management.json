@@ -16,7 +16,7 @@
       },
       "id": "bulk-set",
       "name": "Bulk Set Variables",
-      "type": "n8n-nodes-variables.variablesSet",
+      "type": "n8n-nodes-variables-store.variablesSet",
       "typeVersion": 1,
       "position": [460, 300]
     },
@@ -26,7 +26,7 @@
       },
       "id": "get-info",
       "name": "Get Storage Info",
-      "type": "n8n-nodes-variables.variablesManager",
+      "type": "n8n-nodes-variables-store.variablesManager",
       "typeVersion": 1,
       "position": [680, 300]
     },
@@ -36,7 +36,7 @@
       },
       "id": "export-backup",
       "name": "Export Backup",
-      "type": "n8n-nodes-variables.variablesManager",
+      "type": "n8n-nodes-variables-store.variablesManager",
       "typeVersion": 1,
       "position": [900, 300]
     },
@@ -46,7 +46,7 @@
       },
       "id": "list-variables",
       "name": "List All Variables",
-      "type": "n8n-nodes-variables.variablesGet",
+      "type": "n8n-nodes-variables-store.variablesGet",
       "typeVersion": 1,
       "position": [1120, 300]
     }

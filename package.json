@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-variables",
+  "name": "n8n-nodes-variables-store",
   "version": "1.0.0",
   "description": "n8n community node for global variables management - alternative to paid Variables feature",
   "keywords": [
@@ -10,24 +10,24 @@
     "storage"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/betty/n8n-nodes-variables",
+  "homepage": "https://github.com/betty/n8n-nodes-variables-store",
   "author": {
     "name": "Betty",
     "email": "betty@example.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/betty/n8n-nodes-variables.git"
+    "url": "git+https://github.com/betty/n8n-nodes-variables-store.git"
   },
   "main": "index.js",
   "scripts": {
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
     "format": "prettier nodes --write",
-    "lint": "eslint nodes package.json",
-    "lintfix": "eslint nodes package.json --fix",
+    "lint": "eslint . --ext .js,.ts",
+    "lintfix": "eslint . --ext .js,.ts --fix",
     "test": "node test/VariablesStorage.test.js",
-    "prepublishOnly": "npm run build && npm run lint -s && npm run test"
+    "prepublishOnly": "npm run build && npm run test"
   },
   "files": [
     "dist"

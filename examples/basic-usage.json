@@ -18,7 +18,7 @@
       },
       "id": "set-variable",
       "name": "Set API URL",
-      "type": "n8n-nodes-variables.variablesSet",
+      "type": "n8n-nodes-variables-store.variablesSet",
       "typeVersion": 1,
       "position": [460, 300]
     },
@@ -31,7 +31,7 @@
       },
       "id": "set-config",
       "name": "Set Config",
-      "type": "n8n-nodes-variables.variablesSet",
+      "type": "n8n-nodes-variables-store.variablesSet",
       "typeVersion": 1,
       "position": [680, 300]
     },
@@ -43,7 +43,7 @@
       },
       "id": "get-api-url",
       "name": "Get API URL",
-      "type": "n8n-nodes-variables.variablesGet",
+      "type": "n8n-nodes-variables-store.variablesGet",
       "typeVersion": 1,
       "position": [900, 300]
     },
@@ -53,7 +53,7 @@
       },
       "id": "get-all-vars",
       "name": "Get All Variables",
-      "type": "n8n-nodes-variables.variablesGet",
+      "type": "n8n-nodes-variables-store.variablesGet",
       "typeVersion": 1,
       "position": [1120, 300]
     }

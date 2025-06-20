@@ -1,4 +1,4 @@
-# n8n-nodes-variables - 项目完成总结
+# n8n-nodes-variables-store - 项目完成总结
 
 ## 🎯 项目概述
 
@@ -26,7 +26,7 @@
 ## 🏗️ 技术架构
 
 ```
-n8n-nodes-variables/
+n8n-nodes-variables-store/
 ├── nodes/                    # 节点实现
 │   ├── VariablesGet/        # 获取变量节点
 │   ├── VariablesSet/        # 设置变量节点
@@ -145,16 +145,16 @@ n8n-nodes-variables/
 
 1. **社区节点** (推荐)
    - 设置 > 社区节点
-   - 安装 `n8n-nodes-variables`
+   - 安装 `n8n-nodes-variables-store`
 
 2. **手动安装**
    ```bash
-   npm install n8n-nodes-variables
+   npm install n8n-nodes-variables-store
    ```
 
 3. **Docker**
    ```bash
-   docker exec n8n npm install n8n-nodes-variables
+   docker exec n8n npm install n8n-nodes-variables-store
    ```
 
 ## 🎉 成功指标

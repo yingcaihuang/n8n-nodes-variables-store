@@ -19,7 +19,7 @@ This is the easiest way to install the package:
 
 2. **Install the Package**
    - Click **Install a community node**
-   - Enter: `n8n-nodes-variables`
+   - Enter: `n8n-nodes-variables-store`
    - Click **Install**
    - Wait for installation to complete
 
@@ -36,7 +36,7 @@ For self-hosted n8n instances:
 cd /path/to/your/n8n
 
 # Install the package
-npm install n8n-nodes-variables
+npm install n8n-nodes-variables-store
 
 # Restart n8n
 npm start
@@ -51,7 +51,7 @@ If you're using n8n with Docker:
 docker stop n8n
 
 # Install the package in your n8n volume
-docker run --rm -v n8n_data:/data -w /data node:16 npm install n8n-nodes-variables
+docker run --rm -v n8n_data:/data -w /data node:16 npm install n8n-nodes-variables-store
 
 # Start n8n again
 docker start n8n
@@ -76,7 +76,7 @@ services:
 Then install via the UI or by executing:
 
 ```bash
-docker-compose exec n8n npm install n8n-nodes-variables
+docker-compose exec n8n npm install n8n-nodes-variables-store
 ```
 
 ## Verification
@@ -152,7 +152,7 @@ Import this basic workflow to test:
         "valueType": "string"
       },
       "name": "Set Greeting",
-      "type": "n8n-nodes-variables.variablesSet",
+      "type": "n8n-nodes-variables-store.variablesSet",
       "position": [460, 300]
     },
     {
@@ -161,7 +161,7 @@ Import this basic workflow to test:
         "variableName": "greeting"
       },
       "name": "Get Greeting",
-      "type": "n8n-nodes-variables.variablesGet",
+      "type": "n8n-nodes-variables-store.variablesGet",
       "position": [680, 300]
     }
   ],
@@ -199,7 +199,7 @@ Import this basic workflow to test:
 **Problem**: Package not found
 ```bash
 # Solution: Check npm registry
-npm search n8n-nodes-variables
+npm search n8n-nodes-variables-store
 ```
 
 **Problem**: Permission denied
@@ -240,20 +240,20 @@ volumes:
 **Problem**: Package installation in container
 ```bash
 # Install inside container
-docker exec -it n8n npm install n8n-nodes-variables
+docker exec -it n8n npm install n8n-nodes-variables-store
 ```
 
 ## Uninstallation
 
 ### Community Nodes Method
 1. Go to Settings > Community Nodes
-2. Find n8n-nodes-variables
+2. Find n8n-nodes-variables-store
 3. Click Remove
 4. Restart n8n
 
 ### Manual Method
 ```bash
-npm uninstall n8n-nodes-variables
+npm uninstall n8n-nodes-variables-store
 ```
 
 ### Clean Up Data
